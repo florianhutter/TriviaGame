@@ -12,7 +12,7 @@ var question = [["In 'The Sword in the Stone', what does Merlin call 'The Greate
                ["What is the name of the dentist where Nemo ended up?", "Steve Marshall", "Jeff Nelson", "Phillip Sherman", "Greg Johnson", 3],
                ["In 'Inside out', what is Joy's hair color?", "Blue", "Green", "Red", "White", 1],
                ["How many sisters does Ariel have??", "3", "6", "7", "9", 2],
-               ["In 'Peter Pan', did Captain Hook have a hook?", "Right hand", "Right foot", "Left hand", "Left foot", 3]];
+               ["In 'Peter Pan', where did Captain Hook have his hook?", "Right hand", "Right foot", "Left hand", "Left foot", 3]];
 
 
 var score = 0;
@@ -47,16 +47,34 @@ quest.innerHTML = question[questionNumber][0];
        	score++;
        }
 
-         if(questionNumber === 14){
-        	var mainBody = document.getElementById("quiz");
-        	mainBody.innerHTML = "<h1>" + "Your Score is: "+ score + "/15"+"</h1>"+"<p>"+"The closer you are to 15, the more Disney magic is in you!"+ "</p>";
+        if(questionNumber === 14){
+        var mainBody = document.getElementById("quiz");
+        mainBody.innerHTML = "<h1>" + "Your Score is: "+ score + "/15"+"</h1>"+"<p>"+"The closer you are to 15, the more Disney magic is in you!"+ "</p>";
          }
 
         questionNumber++;
        }
 
 
-//following code adds cursor sparkles
+
+var quiztime = 300;
+var Timer = setInterval(function(){
+    quiztime--;
+    document.getElementById("countdown").textContent = quiztime;
+    if(quiztime <= 0){
+      endGame();
+       clearInterval(Timer);
+     }
+    },1000);
+
+
+
+function endGame() {
+ var mainBody = document.getElementById("quiz");
+        mainBody.innerHTML = "<h1>" + "Your Score is: "+ score + "/15"+"</h1>"+"<p>"+"The closer you are to 15, the more Disney magic is in you!"+ "</p>"; 
+}
+
+//following code adds cursor sparkles - it's copied out of internet... impossible to do that on my own
 
 var theParent = document.getElementById("buttons");
 theParent.addEventListener("click", listenMe, false);
