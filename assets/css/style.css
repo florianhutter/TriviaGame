@@ -1,0 +1,87 @@
+body{
+
+    	background-image: url("../images/pixar.jpg");
+        height: 100%;
+    }
+
+#logo{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+	.skeletton{
+
+		background-color: #fff;
+		width: 70%;
+		height: auto;
+		margin: 100px auto;
+		padding: 10px 50px 50px 50px;
+		border-radius: 50px;
+		border: 3px solid black;
+	}
+    
+   .skeletton h1{
+    	
+    	font-family: 'Quicksand', sans-serif;
+    	border-radius: 25px;
+    	background-color: #57636c;
+    	color: black;
+    	font-size: 60px;
+    	text-align: center;
+    }
+
+
+    .skeletton #question{
+
+    	font-family: 'Quicksand', sans-serif;
+    	font-size: 30px;
+    	color: black;
+    	text-align: center;
+    }
+
+    .buttons{
+
+    	margin-top: 30px;
+    	position: relative;
+    	left: 28px;
+    }
+
+    #btn1, #btn2, #btn3, #btn4{
+     
+     font-family: 'Quicksand', sans-serif;
+     background-color: #7DCAE0;
+     width: 45%;
+     font-size: 20px;
+     color:black;
+     border: 3px solid #1d3c6a;
+     margin: 10px 40px 10px 0px;
+     padding: 10px 20px;
+     border-radius: 50px;
+    }
+
+    #quiz{
+
+    	color: #2b2b2b;
+    	font-size: 18px;
+    }
+
+    #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
+     
+     background-color: #E570A4;
+     cursor: pointer;
+    }
+
+
+     
+    @media (min-width: 260px) and (max-width: 1300px)  {
+             
+             #btn1, #btn2, #btn3, #btn4{
+                 margin: 2px;
+             }
+
+             #logo{
+                width:200px;
+                padding: 10px;
+             }
