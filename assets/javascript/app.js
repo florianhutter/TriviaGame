@@ -50,7 +50,7 @@ quest.innerHTML = question[questionNumber][0];
         if(questionNumber === 14){
         var mainBody = document.getElementById("quiz");
         mainBody.innerHTML = "<h1>" + "Your Score is: "+ score + "/15"+"</h1>"+"<p>"+"The closer you are to 15, the more Disney magic is in you!"+ "</p>";
-         }
+       }
 
         questionNumber++;
        }
