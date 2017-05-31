@@ -10,7 +10,7 @@ body{
 }
 
 	.skeletton{
-		background-color: #fff;
+		background-image: url("../images/mickey.jpg");
 		width: 70%;
 		height: auto;
 		margin: 100px auto;
