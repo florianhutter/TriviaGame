@@ -1,3 +1,5 @@
+alert("Hi, welcome to my Disney-Trivia-Game. Answer 15 questions in 300 seconds and find out if you are a Disney savy.")
+
 var question = [["In 'The Sword in the Stone', what does Merlin call 'The Greatest Force on Earth'?", "Wisdom", "Gravity", "Fear", "Love", 4],
                ["What is the name of Merida’s horse in 'Brave'?", "Freckle", "Angus", "Gordon", "Justin", 2],
                ["In the movie 'Cars', what color is Sally Carrera?", "Blue", "Red", "Yellow", "Green", 1],
